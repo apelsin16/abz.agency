@@ -6,7 +6,8 @@ const INITIAL_STATE = {
     position: '',
     name: '',
     tel: '',
-    email: ''
+    email: '',
+    notEmpty: false
 }
 
 
@@ -18,12 +19,20 @@ export default class Form extends React.Component {
 
 
     handleChange = e => {
+
         const name = e.target.name;
         const value = e.target.value;
+        if( this.state.name !== '' ) {
+            this.setState( {
+                [name]: value,
+                notEmpty: true
+            })
+        } else {
+            this.setState({
+                [name]: value
+            })
+        }
 
-        this.setState({
-            [name]: value
-        })
     };
 
     fileInputChange = (e) => {
@@ -56,6 +65,7 @@ export default class Form extends React.Component {
                         name="name"
                         onChange={this.handleChange}
                         placeholder="Your name"
+                        required
                     />
                 </div>
                 <div className="input-block">
@@ -65,6 +75,7 @@ export default class Form extends React.Component {
                         name="email"
                         onChange={this.handleChange}
                         placeholder="Your email"
+                        required
                       />
                 </div>
                 <div className="input-block">
@@ -75,12 +86,14 @@ export default class Form extends React.Component {
                         onChange={this.handleChange}
                         placeholder="+38 (___) ___ __ __"
                         pattern="^[\+]{0,1}380([0-9]{9})$"
+                        required
                     />
                 </div>
                 <select
                     name="position"
                     onChange={this.handleChange}
                     placeholder="+38 (___) ___ __ __"
+                    required
                 >
                     <option value="" >Select your position</option>
 
@@ -91,14 +104,19 @@ export default class Form extends React.Component {
                     ))}
                 </select>
                 <div className="input-wrapper">
-                    <input type="file"  id="file" className="inputfile" onChange={this.fileInputChange}/>
+                    <input required type="file"  id="file" className="inputfile" onChange={this.fileInputChange}/>
                     <label htmlFor="file">Upload your photo</label>
                 </div>
                 <p className="upload__text">
                     File format jpg  up to 5 MB, the minimum size
                     of 70x70px
                 </p>
-                <button className="form__button" type='submit'>Sign Up</button>
+                {
+                    this.state.notEmpty ?
+                        <button className="banner__button"  type='submit'>Sign Up</button> :
+                        <button className="form__button" disabled type='submit'>Sign Up</button>
+                }
+                {/*<button className="form__button" type='submit'>Sign Up</button>*/}
             </form>
         )
     }

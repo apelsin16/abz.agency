@@ -20,6 +20,10 @@
     margin: 0 auto;
     margin-top: 37px;
 
+    &:invalid {
+      border-color: #f44336;
+    }
+
     option {
       color: #b7b7b7;
 
@@ -99,6 +103,9 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  &:invalid {
+    border-color: #f44336;
+  }
 
   &::after {
     content: '';
