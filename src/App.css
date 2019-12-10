@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.modal__title {
+  font-family: "Overpass";
+  font-size: 22px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 15px;
+}
+
+.modal__text {
+  padding-left: 24px;
+  font-family: "Source Sans Pro";
+  color: #393939;
+  padding-bottom: 44px;
+}
+
+.modal__button {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 20px;
+  color: #ef6c00;
+  padding-bottom: 24px;
+  padding-right: 24px;
+  background-color: inherit;
+  border: none;
+  text-align: right;
+}
+

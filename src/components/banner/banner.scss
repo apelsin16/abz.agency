@@ -1,0 +1,112 @@
+.banner {
+  background-image: url(./banner-bg-320x393.jpg);
+  color: #ffffff;
+  margin-top: 52px;
+  padding: 70px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+
+  &__title {
+    font-family: "Overpass";
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  &__text {
+    font-family: "Source Sans Pro";
+    line-height: 22px;
+    margin-top: 10px;
+    display: none;
+
+    &--short {
+      display: block;
+    }
+
+  }
+
+  &__button {
+    display: block;
+    font-family: "Source Sans Pro";
+    margin-top: 22px;
+    background-color: #ef6c00;
+    border: none;
+    width: 290px;
+    height: 40px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    transition: all 0.2s;
+    text-align: center;
+    line-height: 40px;
+
+    &:hover {
+      background-color: #fc831f;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .banner {
+    padding: 115px 24px 120px 24px;
+    text-align: left;
+    background-image: url(./banner-bg-768x622.jpg);
+    &__title {
+      width: 55%;
+      text-align: left;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    &__text {
+      display: block;
+      width: 52%;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.3;
+      margin-top: 22px;
+      &--short {
+
+        display: none;
+      }
+
+      &__button {
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    padding: 134px 46px 160px 46px;
+    background-image: url(banner-bg-2560x676.jpg);
+
+    &__title {
+      font-size: 50px;
+    }
+
+    &__text {
+      width: 48%;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

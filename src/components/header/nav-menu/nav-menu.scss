@@ -1,0 +1,52 @@
+
+
+.user {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 7px;
+  border-bottom: #e1e1e1 1px solid;
+  font-family: "Source Sans Pro";
+
+  &__name {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  &__mail {
+    font-size: 13px;
+    margin-top: 0;
+    color: #8d8c8c;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.menu {
+  &--mobile {
+    width: 250px;
+  }
+}
+
+.nav--top {
+  padding: 30px 15px;
+  font-family: "Source Sans Pro";
+
+}
+
+.list__item {
+  padding-bottom: 19px;
+  a {
+  color: #000000;
+
+    &:hover {
+      color: #ef6c00;
+      text-decoration: none;
+    }
+}}
+
+

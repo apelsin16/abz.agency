@@ -1,0 +1,136 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 999;
+
+    &__nav {
+        display: none;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+    }
+}
+
+.logo-link {
+    display: block;
+    width: 135px;
+    height: 25px;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.sidebar {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    padding: 0;
+}
+
+.user-account {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__top {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-button {
+        display: none;
+    }
+    .header__top {
+        padding: 7px 47px;
+        margin-bottom: 5px;
+        font-family: "Source Sans Pro";
+        display: flex;
+        align-items: center;
+
+    }
+
+    .header__nav {
+        display: block;
+        width: 455px;
+    }
+
+    .nav__list--top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        li a {
+            color: #000000;
+            transition: all 0.2s;
+
+            &:hover {
+                color: #ef6c00;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .user-account {
+        display: flex;
+        text-align: right;
+
+        &__name {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__email {
+            font-size: 12px;
+            color: #8d8c8c;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+
+        &__button {
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            background-color: inherit;
+            border: none;
+
+            img {
+                transition: all 0.5s;
+                &:hover {
+                    filter: brightness(125%);
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        &__top {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+    }
+}

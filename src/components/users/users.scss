@@ -1,0 +1,81 @@
+.users {
+  padding-top: 45px;
+
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 290px;
+    border: 2px solid #ef6c00;
+    background-color: inherit;
+    border-radius: 5px;
+    height: 40px;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    color: #ef6c00;
+    font-size: 20px;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #fee6d2;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .users {
+    padding-top: 117px;
+
+    &__text {
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .users {
+    padding-top: 136px;
+
+    &__text {
+      font-family: "PT Sans";
+
+    }
+  }
+
+  .user-list {
+    padding-top: 43px;
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .users {
+    width: 1200px;
+    margin: 0 auto;
+    .user-list {
+      .users__item {
+        min-width: 360px;
+        margin: 0;
+
+        .user {
+          &__position, &__email, &__tel {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+}
+

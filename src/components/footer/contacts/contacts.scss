@@ -1,0 +1,61 @@
+.contacts {
+  padding: 24px 15px 16px 15px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.email, .tel {
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+.contacts {
+  padding: 0;
+  text-align: left;
+}
+
+  .email, .tel {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contacts {
+    .email, .tel {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      margin-bottom: 14px;
+      &::before {
+        content: '';
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .contacts .email::before {
+    background-image: url(./mail.svg);
+  }
+
+  .contacts .tel::before {
+    background-image: url(./phone.svg);
+  }
+
+  .contacts .tel--second::before {
+    background-image: url(./cellphone.svg);
+  }
+}

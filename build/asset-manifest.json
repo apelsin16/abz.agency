@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/abz.agency/build/static/css/main.37d416d8.chunk.css",
+    "main.js": "/abz.agency/build/static/js/main.786d0d90.chunk.js",
+    "main.js.map": "/abz.agency/build/static/js/main.786d0d90.chunk.js.map",
+    "runtime-main.js": "/abz.agency/build/static/js/runtime-main.90a2d4cc.js",
+    "runtime-main.js.map": "/abz.agency/build/static/js/runtime-main.90a2d4cc.js.map",
+    "static/css/2.247797c6.chunk.css": "/abz.agency/build/static/css/2.247797c6.chunk.css",
+    "static/js/2.9a243dba.chunk.js": "/abz.agency/build/static/js/2.9a243dba.chunk.js",
+    "static/js/2.9a243dba.chunk.js.map": "/abz.agency/build/static/js/2.9a243dba.chunk.js.map",
+    "index.html": "/abz.agency/build/index.html",
+    "precache-manifest.499e58989c8fc6cfb5a6d1143a5d9b60.js": "/abz.agency/build/precache-manifest.499e58989c8fc6cfb5a6d1143a5d9b60.js",
+    "service-worker.js": "/abz.agency/build/service-worker.js",
+    "static/css/2.247797c6.chunk.css.map": "/abz.agency/build/static/css/2.247797c6.chunk.css.map",
+    "static/css/main.37d416d8.chunk.css.map": "/abz.agency/build/static/css/main.37d416d8.chunk.css.map",
+    "static/media/banner.scss": "/abz.agency/build/static/media/banner-bg-768x622.a70d27c9.jpg",
+    "static/media/form.scss": "/abz.agency/build/static/media/upload.e331f32d.svg",
+    "static/media/contacts.scss": "/abz.agency/build/static/media/phone.ca2f60a3.svg",
+    "static/media/css.svg": "/abz.agency/build/static/media/css.29637879.svg",
+    "static/media/facebook.svg": "/abz.agency/build/static/media/facebook.1b272018.svg",
+    "static/media/html.svg": "/abz.agency/build/static/media/html.d882d855.svg",
+    "static/media/instagram.svg": "/abz.agency/build/static/media/instagram.f263dbf1.svg",
+    "static/media/javascript.svg": "/abz.agency/build/static/media/javascript.cf53a810.svg",
+    "static/media/line-menu.svg": "/abz.agency/build/static/media/line-menu.3b500131.svg",
+    "static/media/linkedin.svg": "/abz.agency/build/static/media/linkedin.569eb74a.svg",
+    "static/media/logo.svg": "/abz.agency/build/static/media/logo.4b806a4c.svg",
+    "static/media/man-laptop-v1.svg": "/abz.agency/build/static/media/man-laptop-v1.3cdf7897.svg",
+    "static/media/man-laptop-v2.svg": "/abz.agency/build/static/media/man-laptop-v2.1097427c.svg",
+    "static/media/man-mobile.svg": "/abz.agency/build/static/media/man-mobile.2afa7771.svg",
+    "static/media/pinterest.svg": "/abz.agency/build/static/media/pinterest.603e7eb0.svg",
+    "static/media/sign-out.svg": "/abz.agency/build/static/media/sign-out.a9a773c4.svg",
+    "static/media/requirement.scss": "/abz.agency/build/static/media/third-block-bg-768x878.0d709404.jpg",
+    "static/media/twitter.svg": "/abz.agency/build/static/media/twitter.3e993ec3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90a2d4cc.js",
+    "static/css/2.247797c6.chunk.css",
+    "static/js/2.9a243dba.chunk.js",
+    "static/css/main.37d416d8.chunk.css",
+    "static/js/main.786d0d90.chunk.js"
+  ]
+}

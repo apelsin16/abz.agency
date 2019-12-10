@@ -1,0 +1,88 @@
+.users__item {
+
+  .user__img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+  }
+
+  .user__name {
+    font-family: "Overpass";
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 11px;
+    margin-bottom: 0;
+  }
+
+  .user__position,
+  .user__email,
+  .user__tel {
+    font-family: "Source Sans Pro";
+    color: #4c4b4b;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .users__item {
+    max-width: 220px;
+    margin: auto;
+
+    .user__img {
+      margin-top: 26px;
+    }
+
+    .user__position {
+      margin-top: 2px;
+      line-height: 1.5;
+      margin-bottom: 0;
+      width: 203px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .user__email {
+      margin: 0 auto;
+      width: 203px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .users {
+
+  .users__item {
+    display: flex;
+    min-width: 290px;
+    text-align: left;
+      margin-bottom: 10px;
+
+    .user {
+      &__img {
+        margin-top: 0;
+        margin-right: 10px;
+      }
+      &__name {
+        margin-top: 25px;
+        margin-bottom: 6px;
+        }
+      }
+    }
+  }
+  .user-list {
+
+    padding-bottom: 10px;
+  }
+}
