@@ -7,7 +7,9 @@ const User = ({name, photo, email, phone, position}) => {
         <li className='users__item'>
             <img src={photo} alt="user" className="user__img" srcSet={photo}/>
             <div>
-                <h3 className="user__name">{name}</h3>
+                <Tooltip title={name}>
+                    <h3 className="user__name">{name}</h3>
+                </Tooltip>
                 <Tooltip title={position}>
                     <p className="user__position">{position}</p>
                 </Tooltip>

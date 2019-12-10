@@ -4,7 +4,8 @@
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    margin-top: 30px;
+    display: block;
+    margin: 30px auto;
   }
 
   .user__name {
@@ -13,6 +14,8 @@
     font-size: 22px;
     margin-top: 11px;
     margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .user__position,
@@ -31,12 +34,25 @@
 }
 
 @media screen and (min-width: 768px) {
+  .users {
+    margin: 0 auto;
+    width: 768px;
+  }
   .users__item {
-    max-width: 220px;
+    width: 220px;
     margin: auto;
+
+    div {
+      width: 100%;
+    }
+
+    .user__name {
+      width: 210px;
+    }
 
     .user__img {
       margin-top: 26px;
+      min-width: 70px;
     }
 
     .user__position {
@@ -50,7 +66,7 @@
     }
 
     .user__email {
-      margin: 0 auto;
+      //margin: 0 auto;
       width: 203px;
       white-space: nowrap;
       overflow: hidden;
@@ -62,10 +78,11 @@
 
 @media screen and (min-width: 1024px) {
   .users {
+    width: 1024px;
 
   .users__item {
     display: flex;
-    min-width: 290px;
+    width: 290px;
     text-align: left;
       margin-bottom: 10px;
 
