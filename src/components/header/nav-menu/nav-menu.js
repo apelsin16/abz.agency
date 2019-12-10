@@ -2,7 +2,8 @@ import React from 'react';
 import Link from "@material-ui/core/Link";
 import './nav-menu.scss';
 
-const NavMenu = ({user}) => {
+const NavMenu = (props) => {
+    const { user } = props;
     return (
         <div className='menu menu--mobile' id="menu">
             <div className='user'>
@@ -17,23 +18,23 @@ const NavMenu = ({user}) => {
             <nav className="nav nav--top">
                     <ul className="nav__list list">
                         <li className="list__item">
-                            <a href='#acquaintance' >About me</a>
+                            <a href='#acquaintance' onClick={props.handleDrawerToggle} >About me</a>
 
                         </li>
                         <li className="list__item">
-                            <a href='#relationship' >Relationships</a>
+                            <a href='#relationship' onClick={props.handleDrawerToggle} >Relationships</a>
                         </li>
                         <li className="list__item">
-                            <a href='#requirement' >Requirements</a>
+                            <a href='#requirement' onClick={props.handleDrawerToggle}>Requirements</a>
                         </li>
                         <li className="list__item">
-                            <a href='#users' >Users</a>
+                            <a href='#users' onClick={props.handleDrawerToggle} >Users</a>
                         </li>
                         <li className="list__item">
-                            <a href='#registration' >Sign Up</a>
+                            <a href='#registration' onClick={props.handleDrawerToggle}>Sign Up</a>
                         </li>
                         <li className="list__item">
-                            <a href='foo'> Sign Out</a>
+                            <a href='#registration' onClick={props.handleDrawerToggle}> Sign Out</a>
                         </li>
                     </ul>
                 </nav>

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "528b0666582a4fe1372e946574fd5854",
+    "revision": "b27ad39c81b4965f0e32a9461308d64f",
     "url": "/abz.agency/build/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abz.agency/build/static/css/2.247797c6.chunk.css"
   },
   {
-    "revision": "b73f0c9ce97f6968b268",
-    "url": "/abz.agency/build/static/css/main.37d416d8.chunk.css"
+    "revision": "961f34314157f0ec1341",
+    "url": "/abz.agency/build/static/css/main.dcf70bf4.chunk.css"
   },
   {
     "revision": "fd0b02cb0ee02474eb97",
     "url": "/abz.agency/build/static/js/2.9a243dba.chunk.js"
   },
   {
-    "revision": "b73f0c9ce97f6968b268",
-    "url": "/abz.agency/build/static/js/main.786d0d90.chunk.js"
+    "revision": "961f34314157f0ec1341",
+    "url": "/abz.agency/build/static/js/main.3928bf80.chunk.js"
   },
   {
     "revision": "c79619b3baef89430310",

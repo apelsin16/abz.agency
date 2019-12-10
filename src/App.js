@@ -108,6 +108,7 @@ class App extends React.Component {
             .catch(function(error) {
                 // proccess network errors
             });
+        this.handleOpenModal();
     }
 
     showMoreUsers = () => {

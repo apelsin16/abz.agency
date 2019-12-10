@@ -72,7 +72,7 @@ class Header extends React.Component {
                     open={this.state.drawerOpen}
                     onClose={this.handleDrawerToggle}
                 >
-                    <NavMenu user={user} />
+                    <NavMenu user={user} handleDrawerToggle={this.handleDrawerToggle} />
                 </Drawer>
             </header>
         )
